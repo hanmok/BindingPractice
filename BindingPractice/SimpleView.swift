@@ -17,10 +17,6 @@ struct SimpleView: View {
             Color(isNight ? .black : .systemBlue).ignoresSafeArea()
             
             VStack {
-                Text("This is my SimpleView! ")
-                    .padding(.bottom, 100)
-                    .foregroundColor(Color.pink)
-                
                 Image(systemName: isNight ? "moon.stars.fill" : "cloud.sun.fill")
                     .resizable()
                     .renderingMode(.original)

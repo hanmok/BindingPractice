@@ -6,10 +6,7 @@ struct SelectionView: View {
     @Binding var showingSelectionView: Bool
     
     var body: some View {
-        VStack {
-            Text("This is my ChangeTimeOfDayView!")
-                .padding(.bottom, 200)
-            
+        VStack {            
             Button {
                 isNight = true
                 showingSelectionView = false
@@ -32,7 +29,7 @@ struct SelectionView: View {
             }
             .frame(width: 300, height: 60)
             .foregroundColor(.black)
-            .background(Color.green)
+            .background(Color.blue)
             .cornerRadius(12)
         }
     }
